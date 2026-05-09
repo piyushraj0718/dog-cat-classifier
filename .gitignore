@@ -1,0 +1,12 @@
+.idea/
+.vscode/
+.lightning_studio/
+.keras/
+__pycache__/
+.ipynb_checkpoints/
+
+*.pyc
+*.pyo
+*.pyd
+
+cats-and-dogs-mini-dataset.zip

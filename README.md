@@ -1,104 +1,40 @@
-# 🐱 Dog vs Cat Classifier 🐶
+#  Dog vs Cat Classifier 
 
-A simple yet powerful image classification application that can distinguish between dogs and cats using a Convolutional Neural Network (CNN) built with TensorFlow/Keras.
+A deep learning mini project that classifies whether an uploaded image is a dog or a cat using a Convolutional Neural Network (CNN).
 
-## ✨ Features
+This project was built using TensorFlow/Keras for model training and Streamlit for the web interface.
 
-- 🖼️ Upload and classify images of dogs and cats
-- 📊 View prediction confidence with visual indicators
-- 🧠 Trained CNN model with good accuracy
-- 🖥️ Streamlit web interface for easy interaction
-- 📝 Command-line interface for inferencing
+---
 
-## 🛠️ Installation
+##  Features
 
-### Prerequisites
+- Upload dog or cat images
+- Real-time image prediction
+- Confidence score visualization
+- Streamlit-based interactive UI
+- CNN model trained on image dataset
 
-- Python 3.8+ installed
-- pip package manager
+---
 
-### Option 1: Standard Installation
+##  Technologies Used
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/yourusername/dog-cat-classifier.git
-   cd dog-cat-classifier
-   ```
+- Python
+- TensorFlow / Keras
+- Streamlit
+- NumPy
+- Pillow
+- Plotly
 
-2. Install required packages:
-   ```bash
-   pip install -r requirements.txt
-   ```
+---
 
-### Option 2: Using Conda (for Apple Silicon M1/M2)
+##  Project Structure
 
-1. Create a conda environment using the provided YAML file:
-   ```bash
-   conda env create -n dogcat python==3.11 -y
-   conda activate dogcat
-   ```
-
-2. Install additional requirements:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-## 🚀 Usage
-
-### Web Interface
-
-Run the Streamlit app:
 ```bash
-streamlit run streamlit_app.py
-```
-
-Then open your browser and navigate to the URL shown in the terminal (typically http://localhost:8501).
-
-### Command Line Interface
-
-For quick predictions without the web interface:
-```bash
-python cli.py path/to/your/image.jpg
-```
-
-Optional arguments:
-- `--model`: Specify a different model file (default: dog_cat_cnn_model.h5)
-
-Example:
-```bash
-python cli.py samples/my_cat.jpg --model models/custom_model.h5
-```
-
-## 🧪 Model Training
-
-The model was trained on a dataset of dog and cat images. The training process is documented in `training_a_cnn_with_custom_dataset_keras.py`.
-
-Key model architecture:
-- Input: 128x128 RGB images
-- 3 convolutional layers with max pooling
-- Dense layers with dropout for regularization
-- Binary classification output (dog or cat)
-
-## 📁 Project Structure
-
-```
 dog-cat-classifier/
-├── streamlit_app.py        # Web interface
-├── cli.py        # Command line tool
-├── dog_cat_cnn_model.h5    # Trained model
-├── requirements.txt        # Python dependencies
-└── README.md               # This file
-```
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🙏 Acknowledgements
-
-- Dataset from Kaggle's Dogs vs Cats competition
-- Built with TensorFlow and Streamlit
+│
+├── streamlit_app.py
+├── cli.py
+├── dog_cat_model1.keras
+├── requirements.txt
+├── README.md
+├── Training_a_CNN_with_Custom_Dataset.ipynb

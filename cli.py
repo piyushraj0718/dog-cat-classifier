@@ -31,7 +31,7 @@ def predict_image(img_path, model_path):
         # Load and preprocess image
         print(f"Processing image {img_path}...")
         img = Image.open(img_path)
-        img = img.resize((128, 128))
+        img = img.resize((150, 150))
         img_array = image.img_to_array(img) / 255.0
         img_array = np.expand_dims(img_array, axis=0)
         
@@ -51,7 +51,7 @@ if __name__ == "__main__":
     # Set up argument parser
     parser = argparse.ArgumentParser(description='Predict if an image contains a dog or cat')
     parser.add_argument('image_path', type=str, help='Path to the image file')
-    parser.add_argument('--model', type=str, default='dog_cat_final_model.keras', 
+    parser.add_argument('--model', type=str, default='dog_cat_model1.keras', 
                         help='Path to the model file (default: dog_cat_cnn_model.h5)')
     
     # Parse arguments
