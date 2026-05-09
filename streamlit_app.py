@@ -102,7 +102,7 @@ st.markdown(
 @st.cache_resource
 def load_classification_model():
 
-    model = load_model("dog_cat_model1.keras")
+    model = load_model("/teamspace/studios/this_studio/dog-cat-classifier/dog_cat_model1.keras")
 
     return model
 
